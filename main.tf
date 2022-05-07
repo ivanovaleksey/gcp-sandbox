@@ -8,9 +8,9 @@ terraform {
 }
 
 provider "google" {
-  project = "virtual-cycling-169415"
-  region  = "europe-north1"
-  zone    = "europe-north1-a"
+  project = var.project
+  region  = var.region
+  zone    = var.zone
 }
 
 resource "google_compute_network" "vpc_network" {
